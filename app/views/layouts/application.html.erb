@@ -10,6 +10,32 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample5">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <p class="navbar-brand">家計簿</p>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarEexample5">
+              <ul class="nav navbar-nav">
+                <li><%= link_to "家計簿について", about_path %></li>
+                <li><%= link_to "新規登録", new_user_registration_path %></li>
+                <li><%= link_to "ログイン", new_user_session_path %></li>
+              </ul>
+              <p class="navbar-text">ようこそ ゲスト さん。</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>

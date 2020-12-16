@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_payment: 1
+  food_cost: 1
+  daily_cost: 1
+  water_cost: 1
+  gas_cost: 1
+  electricity_cost: 1
+  communication_cost: 1
+  entertainment_cost: 1
+  transpotation_cost: 1
+
+two:
+  total_payment: 1
+  food_cost: 1
+  daily_cost: 1
+  water_cost: 1
+  gas_cost: 1
+  electricity_cost: 1
+  communication_cost: 1
+  entertainment_cost: 1
+  transpotation_cost: 1
