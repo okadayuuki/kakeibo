@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  get '/' => 'tops#top'
+  get '/' => 'tops#top',as: 'top_path'
   get '/about' => 'tops#about'
+  get 'calender' => 'calenders#calender',as:"calender_path"
   
   resources :incomes
   resources :payment

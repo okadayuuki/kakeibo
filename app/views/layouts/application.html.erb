@@ -24,11 +24,21 @@
               <p class="navbar-brand">家計簿</p>
             </div>
             <div class="collapse navbar-collapse" id="navbarEexample5">
-              <ul class="nav navbar-nav">
-                <li><%= link_to "家計簿について", about_path %></li>
-                <li><%= link_to "新規登録", new_user_registration_path %></li>
-                <li><%= link_to "ログイン", new_user_session_path %></li>
-              </ul>
+              <% if user_signed_in? %>
+                <ul class="nav navbar-nav">
+                  <li><%= link_to "HOME", top_path_url %></li>
+                  <li><%= link_to "家計簿について", about_path %></li>
+                  <li><%= link_to "マイページ"  %></li>
+                  <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+                </ul>
+              <% else %>
+                <ul class="nav navbar-nav">
+                  <li><%= link_to "HOME", top_path_url %></li>
+                  <li><%= link_to "家計簿について", about_path %></li>
+                  <li><%= link_to "新規登録", new_user_registration_path %></li>
+                  <li><%= link_to "ログイン", new_user_session_path %></li>
+                </ul>
+              <% end %>
               <p class="navbar-text">ようこそ ゲスト さん。</p>
             </div>
           </div>
